@@ -19,7 +19,7 @@ phases:
     commands:
       - echo Build completed on `date`
       - echo Deploying to S3...
-      - aws s3 sync ./_nuxt/ s3://mys3test1117/ --delete
+      - aws s3 sync ./dist s3://mys3test1117/ --delete
 
 cache:
   paths:
