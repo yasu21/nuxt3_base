@@ -1,0 +1,9 @@
+{
+  "editor.formatOnSave": true, // 全体設定
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "workbench.editor.enablePreview": false // option
+}
