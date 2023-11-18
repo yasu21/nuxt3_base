@@ -20,6 +20,8 @@ phases:
       - echo Build completed on `date`
       - echo Deploying to S3...
       - aws s3 sync ./dist/ s3://mys3test1117/ --delete
+      - echo Invalidating CloudFront distribution...
+      - aws cloudfront create-invalidation --distribution-id E3M33J7XUSON6J --paths "/*"
 
 cache:
   paths:
